@@ -18,7 +18,7 @@ app.use(morgan('common'));
 
 app.use('/api/home', homeRoute);
 app.use('/api/users', userRoute);
-app.use('/api/users', authRoute);
+app.use('/api/auth', authRoute);
 
 mongoose.connect((process.env.MONGO_URL))
 
