@@ -32,6 +32,22 @@ const userSchema = new mongoose.Schema({
     adminPrivelages: {
         type: Boolean,
         default: false
+    },
+    desc: {
+        type: String,
+        max: 50
+    },
+    from: {
+        type: String,
+        max: 50
+    },
+    city: {
+        type: String,
+        max: 50
+    },
+    relationship: {
+        type: Number,
+        num: []
     }
 }, 
 { timestamps: true}
